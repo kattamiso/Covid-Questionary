@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "BPG Arial";
+    src: url(./assets/bpg_arial_2009.ttf) format(openType);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+a{
+    font-family: "BPG Arial";
+    text-decoration-line: none;
+}
+
+.logo {
+    width: 100px;
+}
+
+.start-btn {
+    width: 500px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--darkText);
+    text-align: center;
+}
+
+.start-btn:hover {
+    color: red;
+}
+
