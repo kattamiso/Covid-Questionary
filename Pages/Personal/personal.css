@@ -4,8 +4,9 @@
     src: url(./assets/font/bpg_arial_2009.ttf) format("opentype");
   }
 
-main {
-   /*  width: 100%;
+
+main {   
+    /* width: 100%;
     height: 100%; */
     padding: 90px 196px 184px 200px;
     font-family: "BPG Arial";
@@ -37,7 +38,6 @@ header hr {
 content {
     display: flex;
     flex-direction: column;
-    margin-top: 42px;
 }
 
 form {
@@ -45,16 +45,14 @@ form {
     flex-direction: column;
     width: 203px;
     height: 50px;
-    margin-top: 42px;
 }
 
 form label {
     font-weight: 700;
     font-size: 22px;
-    line-height: 27px;
     color: #232323;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 section img {
@@ -71,29 +69,50 @@ section img {
     height: 50px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 21.73px;
+    
+    /* line-height: 21.73px; */
 }
 
 section hr {
+    width: 237px;
+    margin-top: 300px;
     position: absolute;
-    width: 250px;
-    height: 0px;
-    left: 205px;
-    top: 500px;
-    border: 0.8px solid #000000;
 }
 
-.warning {
-    margin-top: 280px;
+section .warning {
+    margin-top: 320px;
     color: grey;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 svg {
+    width: 14px;
+    height: 20.63px;
+    left: calc(50% - 14px/2 + 79px);
+    bottom: 50.37px;
+    /* border: 2.4px solid #232323; */
+}
+
+.next-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
     position: absolute;
     width: 14px;
     height: 20.63px;
     left: calc(50% - 14px/2 + 79px);
     bottom: 104.37px;
-    /* border: 2.4px solid #232323; */
-}
+  }
+
+.error-box {
+    width: fit-content;
+    height: 20px;
+    /* margin-bottom: 27px; */
+  }
+  
+  .error {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.31px;
+    color: var(--error);
+  }
